@@ -1,0 +1,22 @@
+button.btnx {
+    height: auto;
+    margin: auto;
+    width: 100%;
+    padding: 5px;
+    border: none;
+    font-weight: bold;
+    font-size: large;
+    background-color:  rgba(165, 165, 165, 0.801);
+}
+button.btnx:hover {
+    background-color: chocolate;
+}
+.item {
+    margin-bottom: 20px;
+}
+@media (max-width: 1200px)
+{
+    .list {
+		justify-content:start;
+	}
+}

@@ -1,0 +1,654 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/Template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- InstanceBeginEditable name="doctitle" -->
+    <title>Tìm truyện năng cao</title>
+    <!-- InstanceEndEditable -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"/>
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">  
+    <link rel="icon" href="imgs/logo-icon.png" type = "image/x-icon"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- InstanceBeginEditable name="head" -->
+    <link rel="stylesheet" href="css/timtruyen.css">
+    <!-- InstanceEndEditable -->
+</head>
+<body>
+    <a href="#" id="to-top"><i class="fas fa-arrow-circle-up"></i></a>
+    <!-- Header-->
+    <div class="header">
+        <div class="container">
+            <table width="100%">
+                <tr>
+                    <td width="30%"><a href="TrangChu.html"><img src="imgs/logo01.png" height="100%"></a>
+                    </td>
+                    <td width="40%"><input type="text" placeholder="Nội dung tìm kiếm ..." id="txtsearch"></td>
+                    <td width="30%" align="right">
+                        <ul>
+                            <li><a href="DangNhap.html">Đăng nhập</a></li>
+                            <li><a href="DangKy.html">Đăng ký</a></li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!-- End Header-->
+    
+    <!-- Navigation-->
+    
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                <!-- InstanceBeginEditable name="active" -->
+                <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link " href="TrangChu.html"><i class="fas fa-home" style="padding: 10px 10px 10px 5px;"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Hot.html">HOT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="TheoDoi_dn.html">THEO DÕI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="LichSu.html">LỊCH SỬ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="TheLoai.html">THỂ LOẠI</a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Adventure</a></li>
+                                    <li><a href="#">Anime</a></li>
+                                    <li><a href="#">Chuyển Sinh</a></li>
+                                    <li><a href="#">Cổ Đại</a></li>
+                                    <li><a href="#">Harem</a></li>
+                                    <li><a href="#">Manga</a></li>
+                                    <li><a href="#">Manhua</a></li>
+                                    <li><a href="#">Manhwa</a></li>
+                                    <li><a href="#">Ngôn Tình</a></li>
+                                    <li><a href="#">One shot</a></li>
+                                    <li><a href="#">School Life</a></li>
+                                </ul>
+    
+                            </div>
+    
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="TimTruyen.html">TÌM TRUYỆN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="DienDan.html">DIỄN ĐÀN</a>
+                        </li>
+                    </ul>
+                    <!-- InstanceEndEditable -->
+                </div>
+    
+    
+            </div>
+    
+        </div>
+    </nav>
+    
+    <!-- End Navigation-->
+
+    <!-- Main -->
+    <div class="main">
+        <!-- InstanceBeginEditable name="main" -->
+        <div class="container">
+			<div class="breadcrumb">
+                <ul>
+                    <li><a href="TrangChu.html" target="_self">Trang chủ</a></li>
+                    <li><a href="timtruyen.html" target="_self">Tìm truyện</a></li>
+                </ul>
+            </div>
+    
+            <div class="content">
+                <h2 class="title">Tìm truyện nâng cao</h2>
+                <div class="btn-hidebox">
+                    <button type="button" id="hide">
+                        <span>Ẩn khung tìm kiếm </span>
+                        <i class="fas fa-angle-double-up"></i>
+                    </button>
+                </div>
+    
+                <div class="find-box" id="find-box">
+                    <div class="explains">
+                        <div class="explain-item">
+                            <span class="icon-tick"><img src="imgs/check.png" alt=""></span>
+                            <span>Tìm trong những thể loại này</span>
+                        </div>
+    
+                        <div class="explain-item">
+                            <span class="icon-tick"><img src="imgs/nocheck.png" alt=""></span>
+                            <span>Loại trừ những thể loại này</span>
+                        </div>
+    
+                        <div class="explain-item">
+                            <span class="icon-tick"></span>
+                            <span>Truyện có thể thuộc hoặc không thuộc thể loại này</span>
+                        </div>
+                    </div>
+    
+                    <div class="reset">
+                        <a href="TimTruyen.html">
+                            <i class="fas fa-sync-alt"></i> 
+                            Reset
+                        </a>
+                    </div>
+    
+                    <div class="genres-box">
+                        <h4>Thể loại</h4>
+    
+                        <div class="genres">
+                            <div class="genre-item" title="Thể loại này thường có nội dung về đánh nhau, bạo lực, hỗn loạn, với diễn biến nhanh">
+                                <span class="genre-checkbox" onclick="check(this)"></span>
+                                <span>Action</span>
+                            </div>
+    
+                            <div class="genre-item" title="Thể loại Adult đề cập đến vấn đề nhạy cảm, chỉ dành cho tuổi 17+">
+                                <span class="genre-checkbox" onclick="check(this)"></span>
+                                <span>Adult</span>
+                            </div>
+    
+                            <div class="genre-item" title="Thể loại phiêu lưu, mạo hiểm, thường là hành trình của các nhân vật">
+                                <span class="genre-checkbox" onclick="check(this)"></span>
+                                <span>Adventure</span>
+                            </div>
+    
+                            <div class="genre-item" title="Truyện đã được chuyển thể thành film Anime">
+                                <span class="genre-checkbox" onclick="check(this)"></span>
+                                <span>Anime</span>
+                            </div>
+    
+                            <div class="genre-item" title="Thể loại này là những câu chuyện về người ở một thế giới này xuyên đến một thế giới khác, có thể là thế giới mang phong cách trung cổ với kiếm sĩ và ma thuật, hay thế giới trong game, hoặc có thể là bạn chết ở nơi này và được chuyển sinh đến nơi khác">
+                                <span class="genre-checkbox" onclick="check(this)"></span>
+                                <span>Chuyển Sinh</span>
+                            </div>
+    
+                            <div class="genre-item" title="Thể loại có nội dung trong sáng và cảm động, thường có các tình tiết gây cười, các xung đột nhẹ nhàng">
+                                <span class="genre-checkbox" onclick="check(this)"></span>
+                                <span>Comedy</span>
+                            </div>
+    
+                            <div class="genre-item" title="Thể loại có nội dung về nấu ăn, ẩm thực">
+                                <span class="genre-checkbox" onclick="check(this)"></span>
+                                <span>Cooking</span>
+                            </div>
+    
+                            <div class="genre-item" title="Thể loại truyện phóng tác do fan hay có thể cả những Mangaka khác với tác giả truyện gốc. Tác giả vẽ Doujinshi thường dựa trên những nhân vật gốc để viết ra những câu chuyện theo sở thích của mình">
+                                <span class="genre-checkbox" onclick="check(this)"></span>
+                                <span>Doujinshi</span>
+                            </div>
+    
+                            <div class="genre-item" title="Thể loại mang đến cho người xem những cảm xúc khác nhau: buồn bã, căng thẳng thậm chí là bi phẫn">
+                                <span class="genre-checkbox" onclick="check(this)"></span>
+                                <span>Drama</span>
+                            </div>
+    
+                            <div class="genre-item" title="Truyện tình cảm giữa nam và nam.">
+                                <span class="genre-checkbox" onclick="check(this)"></span>
+                                <span>Đam Mỹ</span>
+                            </div>
+    
+                            <div class="genre-item" title="Thể loại xuất phát từ trí tưởng tượng phong phú, từ pháp thuật đến thế giới trong mơ thậm chí là những câu chuyện thần tiên">
+                                <span class="genre-checkbox" onclick="check(this)"></span>
+                                <span>Fantasy</span>
+                            </div>
+    
+    
+                            <div class="genre-item" title="Là một thể loại trong đó giới tính của nhân vật bị lẫn lộn: nam hoá thành nữ, nữ hóa thành nam...">
+                                <span class="genre-checkbox" onclick="check(this)"></span>
+                                <span>Gender Bender</span>
+                            </div>
+    
+                            <div class="genre-item" title="Thể loại truyện tình cảm, lãng mạn mà trong đó, nhiều nhân vật nữ thích một nam nhân vật chính">
+                                <span class="genre-checkbox" onclick="check(this)"></span>
+                                <span>Harem</span>
+                            </div>
+    
+                            <div class="genre-item" title="">
+                                <span class="genre-checkbox" onclick="check(this)"></span>
+                                <span>Lịch sử</span>
+                            </div>
+    
+                            <div class="genre-item" title="Horror là: rùng rợn, nghe cái tên là bạn đã hiểu thể loại này có nội dung thế nào. Nó làm cho bạn kinh hãi, khiếp sợ, ghê tởm, run rẩy, có thể gây sock - một thể loại không dành cho người yếu tim">
+                                <span class="genre-checkbox" onclick="check(this)"></span>
+                                <span>Horror</span>
+                            </div>
+    
+                            <div class="genre-item" title="Thể loại của manga hay anime được sáng tác chủ yếu bởi phụ nữ cho những độc giả nữ từ 18 đến 30. Josei manga có thể miêu tả những lãng mạn thực tế , nhưng trái ngược với hầu hết các kiểu lãng mạn lí tưởng của Shoujo manga với cốt truyện rõ ràng, chín chắn">
+                                <span class="genre-checkbox" onclick="check(this)"></span>
+                                <span>Josei</span>
+                            </div>
+                            
+                            <div class="genre-item" title="Truyện đã được chuyển thể thành phim">
+                                <span class="genre-checkbox" onclick="check(this)"></span>
+                                <span>Live action</span>
+                            </div>
+    
+                            <div class="genre-item" title="Truyện tranh của Nhật Bản">
+                                <span class="genre-checkbox" onclick="check(this)"></span>
+                                <span>Manga</span>
+                            </div>
+    
+                            <div class="genre-item" title="Truyện tranh của Trung Quốc">
+                                <span class="genre-checkbox" onclick="check(this)"></span>
+                                <span>Manhua</span>
+                            </div>
+    
+                            <div class="genre-item" title="Truyện tranh Hàn Quốc, đọc từ trái sang phải">
+                                <span class="genre-checkbox" onclick="check(this)"></span>
+                                <span>Manhwa</span>
+                            </div>
+    
+                            <div class="genre-item" title="Giống với tên gọi, bất cứ gì liên quan đến võ thuật trong truyện từ các trận đánh nhau, tự vệ đến các môn võ thuật như akido, karate, judo hay taekwondo, kendo, các cách né tránh">
+                                <span class="genre-checkbox" onclick="check(this)"></span>
+                                <span>Martial Arts</span>
+                            </div>
+    
+                            <div class="genre-item" title="Thể loại dành cho lứa tuổi 17+ bao gồm các pha bạo lực, máu me, chém giết, tình dục ở mức độ vừa">
+                                <span class="genre-checkbox" onclick="check(this)"></span>
+                                <span>Mature</span>
+                            </div>
+    
+                            <div class="genre-item" title="Mecha, còn được biết đến dưới cái tên meka hay mechs, là thể loại nói tới những cỗ máy biết đi (thường là do phi công cầm lái)">
+                                <span class="genre-checkbox" onclick="check(this)"></span>
+                                <span>Mecha</span>
+                            </div>
+    
+                            <div class="genre-item" title="Truyện thuộc kiểu lãng mạn, kể về những sự kiện vui buồn trong tình yêu của nhân vật chính.">
+                                <span class="genre-checkbox" onclick="check(this)"></span>
+                                <span>Ngôn Tình</span>
+                            </div>
+    
+                            <div class="genre-item" title="Những truyện ngắn, thường là 1 chương">
+                                <span class="genre-checkbox" onclick="check(this)"></span>
+                                <span>One shot</span>
+                            </div>
+                            
+                            <div class="genre-item" title="Thể loại liên quan đến những vấn đề về tâm lý của nhân vật ( tâm thần bất ổn, điên cuồng ...)">
+                                <span class="genre-checkbox" onclick="check(this)"></span>
+                                <span>Psychological</span>
+                            </div>
+    
+                            <div class="genre-item" title="Thường là những câu chuyện về tình yêu, tình cảm lãng mạn. Ớ đây chúng ta sẽ lấy ví dụ như tình yêu giữa một người con trai và con gái, bên cạnh đó đặc điểm thể loại này là kích thích trí tưởng tượng của bạn về tình yêu">
+                                <span class="genre-checkbox" onclick="check(this)"></span>
+                                <span>Romance</span>
+                            </div>
+    
+                            <div class="genre-item" title="Trong thể loại này, ngữ cảnh diễn biến câu chuyện chủ yếu ở trường học">
+                                <span class="genre-checkbox" onclick="check(this)"></span>
+                                <span>School Life</span>
+                            </div>
+    
+                            <div class="genre-item" title="Bao gồm những chuyện khoa học viễn tưởng, đa phần chúng xoay quanh nhiều hiện tượng mà liên quan tới khoa học, công nghệ, tuy vậy thường thì những câu chuyện đó không gắn bó chặt chẽ với các thành tựu khoa học hiện thời, mà là do con người tưởng tượng ra">
+                                <span class="genre-checkbox" onclick="check(this)"></span>
+                                <span>Sci-fi</span>
+                            </div>
+    
+                            <div class="genre-item" title="Thể loại của manga thường nhằm vào những đối tượng nam 18 đến 30 tuổi, nhưng người xem có thể lớn tuổi hơn, với một vài bộ truyện nhắm đến các doanh nhân nam quá 40. Thể loại này có nhiều phong cách riêng biệt , nhưng thể loại này có những nét riêng biệt, thường được phân vào những phong cách nghệ thuật rộng hơn và phong phú hơn về chủ đề, có các loại từ mới mẻ tiên tiến đến khiêu dâm">
+                                <span class="genre-checkbox" onclick="check(this)"></span>
+                                <span>Seinen</span>
+                            </div>
+                            <div class="genre-item" title="Đối tượng hướng tới của thể loại này là phái nữ. Nội dung của những bộ manga này thường liên quan đến tình cảm lãng mạn, chú trọng đầu tư cho nhân vật (tính cách,...)">
+                                <span class="genre-checkbox" onclick="check(this)"></span>
+                                <span>Shoujo</span>
+                            </div>
+    
+                            <div class="genre-item" title="Đối tượng hướng tới của thể loại này là phái nam. Nội dung của những bộ manga này thường liên quan đến đánh nhau và/hoặc bạo lực (ở mức bình thường, không thái quá)">
+                                <span class="genre-checkbox" onclick="check(this)"></span>
+                                <span>Shounen</span>
+                            </div>
+    
+                            <div class="genre-item" title="Thể loại có nội dung về tình yêu giữa những chàng trai trẻ, mang tính chất lãng mạn nhưng ko đề cập đến quan hệ tình dục">
+                                <span class="genre-checkbox" onclick="check(this)"></span>
+                                <span>Shounen Ai</span>
+                            </div>
+    
+                            <div class="genre-item" title="Nói về cuộc sống đời thường">
+                                <span class="genre-checkbox" onclick="check(this)"></span>
+                                <span>Slice of Life</span>
+                            </div>
+    
+                            <div class="genre-item" title="Những truyện có nội dung hơi nhạy cảm, đặc biệt là liên quan đến tình dục">
+                                <span class="genre-checkbox" onclick="check(this)"></span>
+                                <span>Smut</span>
+                            </div>
+    
+                            <div class="genre-item" title="Boy x Boy. Nặng hơn Shounen Ai tí.">
+                                <span class="genre-checkbox" onclick="check(this)"></span>
+                                <span>Soft Yaoi</span>
+                            </div>
+                            
+                            <div class="genre-item" title="Girl x Girl. Nặng hơn Shoujo Ai tí">
+                                <span class="genre-checkbox" onclick="check(this)"></span>
+                                <span>Soft Yuri</span>
+                            </div>
+    
+                            <div class="genre-item" title="Đúng như tên gọi, những môn thể thao như bóng đá, bóng chày, bóng chuyền, đua xe, cầu lông,... là một phần của thể loại này">
+                                <span class="genre-checkbox" onclick="check(this)"></span>
+                                <span>Sports</span>
+                            </div>
+    
+                            <div class="genre-item" title="Thể hiện những sức mạnh đáng kinh ngạc và không thể giải thích được, chúng thường đi kèm với những sự kiện trái ngược hoặc thách thức với những định luật vật lý">
+                                <span class="genre-checkbox" onclick="check(this)"></span>
+                                <span>Supernatural</span>
+                            </div>
+    
+                            <div class="genre-item" title="Tạp chí online về manga anime v.v..">
+                                <span class="genre-checkbox" onclick="check(this)"></span>
+                                <span>Tạp chí truyện tranh</span>
+                            </div>
+    
+                            <div class="genre-item" title="Truyện tranh dành cho lứa tuổi thiếu nhi">
+                                <span class="genre-checkbox" onclick="check(this)"></span>
+                                <span>Tragedy</span>
+                            </div>
+                            
+                            <div class="genre-item" title="Thể loại chứa đựng những sự kiện mà dẫn đến kết cục là những mất mát hay sự rủi ro to lớn">
+                                <span class="genre-checkbox" onclick="check(this)"></span>
+                                <span>Tragedy</span>
+                            </div>
+    
+                            <div class="genre-item" title="Các truyện có nội dung về các vụ án, các thám tử cảnh sát điều tra...">
+                                <span class="genre-checkbox" onclick="check(this)"></span>
+                                <span>Trinh Thám</span>
+                            </div>
+    
+                            <div class="genre-item" title="Tổng hợp truyện tranh màu, rõ, đẹp">
+                                <span class="genre-checkbox" onclick="check(this)"></span>
+                                <span>Truyện Màu</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="selects-box">
+                        <div class="selects">
+                            <h4>Số lượng chương</h4>
+                            <select name="" id="">
+                                <option value="" selected>>0 chương</option>
+                                <option value="">>=50 chương</option>
+                                <option value="">>=100 chương</option>
+                                <option value="">>=200 chương</option>
+                                <option value="">>=300 chương</option>
+                                <option value="">>=400 chương</option>
+                                <option value="">>=500 chương</option>
+                            </select>
+                        </div>
+    
+                        <div class="selects">
+                            <h4>Tình trạng</h4>
+                            <select name="" id="">
+                                <option value="">Đang tiến hành</option>
+                                <option value="">Đã hoàn thành</option>
+                                <option value="" selected>Tất cả</option>
+                            </select>
+                        </div>
+    
+                        <div class="selects">
+                            <h4>Dành cho</h4>
+                            <select name="" id="">
+                                <option value="" selected>Tất cả</option>
+                                <option value="">Con trai</option>
+                                <option value="">Con gái</option>
+                            </select>
+                        </div>
+    
+                        <div class="selects">
+                            <h4>Sắp xếp theo</h4>
+                            <select name="" id="">
+                                <option value="" selected>Chương mới</option>
+                                <option value="">Truyện mới</option>
+                                <option value="">Xem nhiều nhất</option>
+                                <option value="">Xem nhiều nhất tháng</option>
+                                <option value="">Xem nhiều nhất tuần</option>
+                                <option value="">Xem nhiều nhất hôm nay</option>
+                                <option value="">Theo dõi nhiều nhất</option>
+                                <option value="">Bình luận nhiều nhất</option>
+                                <option value="">Số chương nhiều nhất</option>
+                                <option value="">Theo ABC</option>
+                            </select>
+                        </div>
+    
+                        <div class="selects find-btn">
+                            <h4></h4>
+                            <input type="button" name="" id="find-btn" value="Tìm kiếm" style="border:none">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="comics" id="comics">
+                    <div class="comic-item">
+                        <a href="chitiettruyen.html" class="img">
+                            <img src="imgs/cuon-so-thien-menh.jpg" alt="">
+                            <div class="details">
+                                <div class="views">
+                                    <i class="far fa-eye"></i>
+                                    265.905
+                                </div>
+
+                                <div class="heart">
+                                    <i class="fas fa-heart"></i>
+                                    6.520
+                                </div>
+                            </div>
+                        </a>
+
+                        <div class="chapters">
+                            <a href="chitiettruyen.html" class="title">Cuốn sổ thiên mệnh</a>
+                            <div class="chapter-item">
+                                <a href="" class="chapter">Chapter 114</a>
+                                <span class="time">2 giờ trước</span>
+                            </div>
+                            <div class="chapter-item">
+                                <a href="" class="chapter">Chapter 113</a>
+                                <span class="time">7 ngày trước</span>
+                            </div>
+                            <div class="chapter-item">
+                                <a href="" class="chapter">Chapter 112</a>
+                                <span class="time">14 ngày trước</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comic-item">
+                        <a href="chitiettruyen.html" class="img">
+                            <img src="imgs/dieu-thu-cuong-y.jpg" alt="">
+                            <div class="details">
+                                <div class="views">
+                                    <i class="fas fa-eye"></i>
+                                    265.905
+                                </div>
+
+                                <div class="heart">
+                                    <i class="fas fa-heart"></i>
+                                    6.520
+                                </div>
+                            </div>
+                        </a>
+
+                        <div class="chapters">
+                            <a href="chitiettruyen.html" class="title">Diệu thủ cường y</a>
+                            <div class="chapter-item">
+                                <a href="" class="chapter">Chapter 208</a>
+                                <span class="time">2 giờ trước</span>
+                            </div>
+                            <div class="chapter-item">
+                                <a href="" class="chapter">Chapter 207</a>
+                                <span class="time">7 ngày trước</span>
+                            </div>
+                            <div class="chapter-item">
+                                <a href="" class="chapter">Chapter 206</a>
+                                <span class="time">14 ngày trước</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comic-item">
+                        <a href="chitiettruyen.html" class="img">
+                            <img src="imgs/dap-toai-tien-ha.jpg" alt="">
+                            <div class="details">
+                                <div class="views">
+                                    <i class="far fa-eye"></i>
+                                    600.000
+                                </div>
+
+                                <div class="heart">
+                                    <i class="fas fa-heart"></i>
+                                    5.259
+                                </div>
+                            </div>
+                        </a>
+
+                        <div class="chapters">
+                            <a href="chitiettruyen.html" class="title">Đập toái thiên hà</a>
+                            <div class="chapter-item">
+                                <a href="" class="chapter">Chapter 208</a>
+                                <span class="time">5 giờ trước</span>
+                            </div>
+                            <div class="chapter-item">
+                                <a href="" class="chapter">Chapter 207</a>
+                                <span class="time">1 ngày trước</span>
+                            </div>
+                            <div class="chapter-item">
+                                <a href="" class="chapter">Chapter 206</a>
+                                <span class="time">2 ngày trước</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comic-item">
+                        <a href="chitiettruyen.html" class="img">
+                            <img src="imgs/ma-hoang-su-de-qua-thuc-qua-chung-tinh.jpg" alt="">
+                            <div class="details">
+                                <div class="views">
+                                    <i class="far fa-eye"></i>
+                                    2.570.264
+                                </div>
+
+                                <div class="heart">
+                                    <i class="fas fa-heart"></i>
+                                    4.520
+                                </div>
+                            </div>
+                        </a>
+
+                        <div class="chapters">
+                            <a href="chitiettruyen.html" class="title">Ma hoàng chung tình</a>
+                            <div class="chapter-item">
+                                <a href="" class="chapter">Chapter 70</a>
+                                <span class="time">5 giờ trước</span>
+                            </div>
+                            <div class="chapter-item">
+                                <a href="" class="chapter">Chapter 69</a>
+                                <span class="time">5 giờ trước</span>
+                            </div>
+                            <div class="chapter-item">
+                                <a href="" class="chapter">Chapter 68</a>
+                                <span class="time">1 ngày trước</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comic-item">
+                        <a href="chitiettruyen.html" class="img">
+                            <img src="imgs/ma-vuong-that-nghiep.jpg" alt="">
+                            <div class="details">
+                                <div class="views">
+                                    <i class="far fa-eye"></i>
+                                    19.285.260
+                                </div>
+
+                                <div class="heart">
+                                    <i class="fas fa-heart"></i>
+                                    5.942
+                                </div>
+                            </div>
+                        </a>
+
+                        <div class="chapters">
+                            <a href="chitiettruyen.html" class="title">Diệu thủ cường y</a>
+                            <div class="chapter-item">
+                                <a href="" class="chapter">Chapter 235</a>
+                                <span class="time">5 ngày trước</span>
+                            </div>
+                            <div class="chapter-item">
+                                <a href="" class="chapter">Chapter 234</a>
+                                <span class="time">6 ngày trước</span>
+                            </div>
+                            <div class="chapter-item">
+                                <a href="" class="chapter">Chapter 233</a>
+                                <span class="time">7 ngày trước</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+		<!-- InstanceEndEditable -->
+    </div>
+    <!-- End Main-->
+	<!-- InstanceBeginEditable name="btn" --><!-- InstanceEndEditable -->
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="info-box" >
+                <img src="imgs/logo01.png" alt="" class="logo">
+                <p class="copyright">Copyright © 2021 Vcomic</p>
+                <p>Website đọc truyện miễn phí hay nhất.</p>
+            </div>
+
+            <div class="contact-box">
+                <p class="title">Liên hệ</p>
+                <div class="contact">
+                    <div class="contact-item">
+                        <a href="tel: +989768545"><i class="fas fa-phone"></i>
+                        0989768545</a>
+                    </div>
+                    <div class="contact-item">
+                        <a href="mailto: vcomic@gmail.com"><i class="fas fa-envelope"></i>
+                        vcomic@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="follow-box">
+                <p class="title">Theo dõi chúng tôi</p>
+                <div class="social">
+                    <a href="#" title="twitter"><i  class="fab fa-twitter"></i> Twitter</a>
+                    <a href="#" title="instagram"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="#" title="facebook"><i class="fab fa-facebook"></i> Facebook</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- End Footer-->
+
+
+    <!-- JavaScript-->
+    
+   <script src="js/js.js"></script>
+   <!-- InstanceBeginEditable name="js" -->
+   <script src="js/timtruyen.js"></script>
+   <!-- InstanceEndEditable -->
+   
+   <!-- End JS-->
+</body>
+<!-- InstanceEnd --></html>

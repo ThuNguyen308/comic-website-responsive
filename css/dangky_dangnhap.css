@@ -1,0 +1,141 @@
+input{
+    outline: none;
+}
+
+.form-box {
+    width: 60%;
+    margin: auto;
+}
+
+.form-box .title{
+    position: relative;
+    font-weight: 600;
+    text-align: left;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+}
+.form-box .title::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 55px;
+    height: 3.5px;
+    background: var(--orange);
+}
+
+.form-box .input-field{
+    margin-bottom: 5px;
+}
+
+.form-box .input-field label {
+    display: block;
+    font-size: 20px;
+}
+
+.form-box .input-field input {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 2px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.form-box .input-field input:focus{
+    border: 1px solid var(--orange);
+    background: rgb(248, 232, 203);
+}
+
+.form-box .box-PW{
+    position: relative;
+}
+
+.form-box .box-PW i{
+    color: var(--orange);
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-120%);
+    cursor: pointer;
+}
+
+.form-box .forgotPW{
+    font-size: 14px;
+    color: var(--orange);
+    text-transform: uppercase;
+}
+
+.form-box .forgotPW:hover{
+    text-decoration: underline;
+}
+
+.form-box #btn-submit{
+    width: 100%;
+    padding: 10px 0;
+    background: var(--orange);
+    color: #fff;
+    font-size: 16px;
+    border-radius:3px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+.form-box #btn-submit:hover{
+    background: #f76e2e;
+}
+
+.txterr {
+    display: block;
+    min-height: 18px;
+    font-size: 14px;
+    color: #f81a06;
+    padding-top: 2px;
+}
+
+.line {
+    display:flex;
+    font-style: italic;
+    font-size: 15px;
+    margin: 15px 0 30px;
+}
+
+.line:before, .line:after {
+    color:#ccc;
+    content:'';
+    flex:1;
+    border-bottom:1px solid #ccc;
+    margin: auto 10px;
+  }
+
+.socials {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.socials img{
+    width: 50px;
+    height: 50px;
+    margin: 0 15px;
+    cursor: pointer;
+}
+@media (max-width: 800px)
+{
+    .form-box {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 768px){
+    .form-box .line::before,
+    .form-box .line::after {
+        width: 32%;
+    }
+}
+
+@media (max-width: 576px){
+    .form-box .line::before,
+    .form-box .line::after {
+        width: 20%;
+    }
+}

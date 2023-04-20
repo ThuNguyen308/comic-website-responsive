@@ -1,0 +1,44 @@
+.cmt {
+    background-color:rgb(236, 229, 209);
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 95%;
+    
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.user {
+    font-weight: bold;
+    font-size: 16px;
+}
+span {
+    color: red;
+}
+.time {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 14px;
+}
+.content {
+    font-size: 16px;
+}
+#btngui {
+    background-color: rgb(135, 197, 27);
+    padding: 10px;
+    width: 30%;
+    min-width: 320px;
+    clear: both;
+    border: none;
+    margin-bottom: 30px;
+}
+#btngui:hover {
+    background-color: chocolate;
+}
+@media (max-width:600px)
+{
+	#btngui {
+		width:95%;
+	}
+}

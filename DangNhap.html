@@ -1,0 +1,201 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/Template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- InstanceBeginEditable name="doctitle" -->
+    <title>Đăng nhập</title>
+    <!-- InstanceEndEditable -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="icon" href="imgs/logo-icon.png" type = "image/x-icon"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- InstanceBeginEditable name="head" -->
+    <link rel="stylesheet" href="css/dangky_dangnhap.css">
+    <!-- InstanceEndEditable -->
+</head>
+<body>
+    <!-- Header-->
+    <div class="header">
+        <div class="container">
+            <table width="100%">
+                <tr>
+                    <td width="30%"><a href="TrangChu.html"><img src="imgs/logo01.png" height="100%"></a>
+                    </td>
+                    <td width="40%"><input type="text" placeholder="Nội dung tìm kiếm ..." id="txtsearch"></td>
+                    <td width="30%" align="right">
+                        <ul>
+                            <li><a href="DangNhap.html">Đăng nhập</a></li>
+                            <li><a href="DangKy.html">Đăng ký</a></li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!-- End Header-->
+    
+    <!-- Navigation-->
+    
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                <!-- InstanceBeginEditable name="active" -->
+                <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link " href="TrangChu.html"><i class="fas fa-home" style="padding: 10px 10px 10px 5px;"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Hot.html">HOT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="TheoDoi_dn.html">THEO DÕI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="LichSu.html">LỊCH SỬ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="TheLoai.html">THỂ LOẠI</a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Adventure</a></li>
+                                    <li><a href="#">Anime</a></li>
+                                    <li><a href="#">Chuyển Sinh</a></li>
+                                    <li><a href="#">Cổ Đại</a></li>
+                                    <li><a href="#">Harem</a></li>
+                                    <li><a href="#">Manga</a></li>
+                                    <li><a href="#">Manhua</a></li>
+                                    <li><a href="#">Manhwa</a></li>
+                                    <li><a href="#">Ngôn Tình</a></li>
+                                    <li><a href="#">One shot</a></li>
+                                    <li><a href="#">School Life</a></li>
+                                </ul>
+    
+                            </div>
+    
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="TimTruyen.html">TÌM TRUYỆN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="DienDan.html">DIỄN ĐÀN</a>
+                        </li>
+                    </ul>
+                    <!-- InstanceEndEditable -->
+                </div>
+    
+    
+            </div>
+    
+        </div>
+    </nav>
+    
+    <!-- End Navigation-->
+
+    <!-- Main -->
+    <div class="main">
+        <!-- InstanceBeginEditable name="main" -->
+        <div class="container">
+			<div class="breadcrumb">
+                <ul>
+                    <li><a href="TrangChu.html" target="_self">Trang chủ</a></li>
+                    <li><a href="Dangky.html" target="_self">Đăng nhập</a></li>
+                </ul>
+            </div>
+    
+            <div class="content">
+                <div class="form-box">
+                    <h2 class="title">Đăng nhập</h2>
+                    <form action="/dangnhap.php" method="post" target="_blank">
+                        <div class="input-field">
+                            <label for="">Tên đăng nhập hoặc email</label>
+                            <input type="text" id="username-email" placeholder="Nhập tên đăng nhập hoặc email" required>
+                            <span class="txterr"></span>
+                        </div>
+    
+                        <div class="input-field">
+                            <label for="">Mật khẩu</label>
+                            <div class="box-PW">
+                                <input type="password" id="password" placeholder="Nhập mật khẩu" required>
+                                <i class="far fa-eye" id="hide"></i>
+                                <span class="txterr"></span>
+                            </div>
+                            <a href="#" class="forgotPW">Quên mật khẩu ?</a>
+                        </div>
+  
+                        <input type="submit" id="btn-submit" value="Đăng nhập" style="border:none" onclick="return validForm()">
+                    </form>
+                    <p class="line">Hoặc đăng nhập bằng mạng xã hội</p>
+    
+                    <div class="socials">
+                        <img src="imgs/google.png" alt="" title="Google">
+                        <img src="imgs/facebook.png" alt="" title="Facebook">
+                    </div>
+                </div>
+            </div>
+		<!-- InstanceEndEditable -->
+        </div>
+    </div>
+    <!-- End Main-->
+	<!-- InstanceBeginEditable name="btn" --><!-- InstanceEndEditable -->
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="info-box" >
+                <img src="imgs/logo01.png" alt="" class="logo">
+                <p class="copyright">Copyright © 2021 Vcomic</p>
+                <p>Website đọc truyện miễn phí hay nhất.</p>
+            </div>
+
+            <div class="contact-box">
+                <p class="title">Liên hệ</p>
+                <div class="contact">
+                    <div class="contact-item">
+                        <a href="tel: +989768545"><i class="fas fa-phone"></i>
+                        0989768545</a>
+                    </div>
+                    <div class="contact-item">
+                        <a href="mailto: vcomic@gmail.com"><i class="fas fa-envelope"></i>
+                        vcomic@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="follow-box">
+                <p class="title">Theo dõi chúng tôi</p>
+                <div class="social">
+                    <a href="#" title="twitter"><i  class="fab fa-twitter"></i> Twitter</a>
+                    <a href="#" title="instagram"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="#" title="facebook"><i class="fab fa-facebook"></i> Facebook</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- End Footer-->
+
+
+    <!-- JavaScript-->
+    
+   <script src="js/js.js"></script>
+   <!-- InstanceBeginEditable name="js" -->
+   <script src="js/dangnhap.js"></script>
+   <!-- InstanceEndEditable -->
+   
+   <!-- End JS-->
+</body>
+<!-- InstanceEnd --></html>

@@ -1,0 +1,17 @@
+
+@media (max-width: 800px)
+{
+	.footer .container {
+		flex-direction: column;
+        align-items: stretch;
+	}
+    .footer .container > div {
+        margin-top: 20px;
+    }
+    .footer .container > div:not(:last-child) {
+        
+        border-bottom:1px solid lightgray;
+    }
+   
+    
+}
