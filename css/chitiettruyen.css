@@ -1,30 +1,24 @@
 
-.container {
-    display: flex;
+.detail-truyen .title {
+    font-size: 2.1rem;
+    text-align: center;
+    padding-bottom: 5px;
+    text-transform: uppercase;
 }
-/* Begin: Left side */
-.container .left-side{
-    flex: 2;
-    padding-right: 15px;
-}
-
-.detail-truyen .title,
 .detail-truyen .time{
     text-align: center;
-}
-
-.detail-truyen .title {
-    font-weight: 500;
-}
-
-.detail-truyen .time{
-    font-size: 14px;
+    font-size: 1.3rem;
+    padding-bottom: 15px;
     font-style: italic;
     color: rgb(86, 86, 86);
 }
 
 .detail-truyen .info-truyen {
     display: flex;
+}
+
+.info-truyen {
+    font-size: 1.6rem;
 }
 
 .info-truyen p,
@@ -65,12 +59,17 @@
     width: 130px;
 }
 
+.info-item p,
+.info-item a {
+    font-size: 1.6rem;
+}
+
 .info-item a{
     color: cornflowerblue;
 }
 
 .info-item a:hover{
-    color: var(--orange);
+    color: var(--primary-color);
     text-decoration: underline;
 }
 
@@ -122,7 +121,6 @@
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    /* 5 */
 }
 
 
@@ -163,6 +161,8 @@
     font-size: 17px;
     padding: 6px 12px;
     border-radius: 3px;
+    outline: none;
+    border: none;
 }
 
 .read button:hover{
@@ -227,7 +227,7 @@
 
 .summary-truyen #more:hover,
 .summary-truyen #more:hover i{
-    color: var(--orange);
+    color: var(--primary-color);
     text-decoration: underline;
 }
 
@@ -256,6 +256,7 @@
 }
 
 .list-chapter .list-content{
+    padding-left: 0;
     height: 580px;
     overflow-x: hidden;
     overflow-y: scroll;
@@ -295,7 +296,7 @@
 }
 
 .list-chapter .list-item .chapter a:hover{
-    color: var(--orange);
+    color: var(--primary-color);
 }
 
 .list-chapter .list-item div:not(:first-child){
@@ -349,12 +350,12 @@
 }
 
 .top-ranks > div:hover{
-    border-top: 2px solid var(--orange);
+    border-top: 2px solid var(--primary-color);
 }
 
 .top-ranks > .active{
     background: #f9f9f9;
-    border-top: 2px solid var(--orange) !important;
+    border-top: 2px solid var(--primary-color) !important;
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
 }
@@ -404,7 +405,7 @@
 }
 
 .rank-item .number.three{
-    color: var(--orange);
+    color: var(--primary-color);
 }
 
 .rank-item .thumb{
@@ -429,7 +430,7 @@
 }
 
 .rank-item .details a:hover{
-    color: var(--orange);
+    color: var(--primary-color);
 }
 
 .rank-item .details .chapter-view{

@@ -13,26 +13,6 @@ more.addEventListener("click", function(){
 })
 
 
-//BXH
-var topRanks = document.querySelectorAll('.top-ranks > div')
-var detailRanks = document.querySelectorAll('.detail-rank')
-topRanks.forEach(function(topRank, index) {
-    topRank.onclick = function(){
-        var topRank_currentactive = document.querySelector('.top-ranks .active')
-        topRank_currentactive.classList.remove('active')
-        topRank.classList.add('active')
-
-        for ( let i = 0; i < 3; i++){
-            if(i==index){
-                detailRanks[index].style.display = 'block'
-            }
-            else{
-                detailRanks[i].style.display = 'none'
-            }
-        };
-    }
-})
-
 //rating star
 const stars = document.querySelectorAll('.stars i')
 const numRating = document.getElementById('num-rating')

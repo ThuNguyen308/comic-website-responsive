@@ -1,0 +1,123 @@
+.container {
+    max-width: 1030px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1030px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1119px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        width: 750px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .hide-on-tablet-mobile {
+        display: none;
+    }
+    
+    .show-on-tablet-mobile {
+        display: block;
+    }
+
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 3
+    }
+
+    .header__notification {
+        flex: 1;
+    }
+
+    .header__search-wrap {
+        min-width: 100%;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        height: auto;
+        margin: 7px -15px;
+    }
+
+    .nav__link {
+        padding: 0 15px;
+        color: var(--white-color);
+    }
+
+    .nav__item.active .nav__link{
+        background-color: transparent;
+    }
+
+    .main {
+        padding-top: var(--header-height);
+    }
+
+    .category-popup,
+    .rating-popup {
+        position: static;
+        width: 100%;
+        border-radius: 0;
+        background-color:transparent
+    }
+
+    .category-list {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 20px;
+        /* border-top: 2px solid var(--white-color); */
+    }
+
+    .category-item {
+        flex: 1 1 50%;
+    }
+
+    .category-link {
+        line-height: 36px;
+        font-weight: 500;
+        color: var(--white-color);
+    }
+
+    .rating-popup {
+        padding: 0 15px;
+    }
+
+    .nav__rating-list {
+        padding: 0 15px;
+        margin: 0 -15px;
+    }
+
+    .nav__rating-link {
+        color: var(--white-color);
+    }
+
+    .chart {
+        padding-top: 15px;
+    }
+
+    .footer{
+        text-align: center;
+    }
+
+    .footer .container {
+		flex-direction: column;
+	}
+    
+    .footer .container > div:not(:last-child) {
+        border-bottom: 1px solid lightgray;
+    }
+}

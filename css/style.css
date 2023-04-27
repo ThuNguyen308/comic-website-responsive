@@ -1,20 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
 :root{
     --orange: #ff880d;
 }
+
 html{
     scroll-behavior: smooth;
+    font-size: 62.5%;
 }
 
 *{
     margin: 0;
     padding: 0;
-    outline: none !important;
+    box-sizing: border-box;
 }
+
 body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
     background-color:rgb(219, 219, 219);
-	font-family:  Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-    font-size: 16px;
 }
+
+button, input {
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+button:focus {
+    outline: none
+}
+
+/* TO TOP */
 #to-top{
     display: none;
     position: fixed;
@@ -32,93 +49,68 @@ body {
     font-size: 20px;
     line-height: 35px;
 }
-/* Header */
 
-/* .header {
-    background-color: #222;
-    height: auto;
+/* HEADER */
+header {
+    height: 50px;
     padding: 5px 0px;
-}
-
-.header .container{
-    max-width: 1100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.header .search-box{
-    position: relative;
-    border-radius: 3px;
-    height: 40px;
-    width: 40%;
-    overflow: hidden;
-    background: #fff;
-}
-
-.header .search-box input{
-    height: 100%;
-    padding-left: 10px;
-    border: none;
-}
-
-.header .search-box i{
-    position: absolute;
-    right: 0;
-    top: 0;
-    line-height: 40px;
-    text-align: center;
-    width: 40px;
-    cursor: pointer;
-}
-
-.header .search-box i:hover{
-    background: #ccc;
-}
-
-.header ul{
-    margin: 0;
-    display: flex;
-    gap: 5px
-}
-
-.signin-signup-btn a{
-    display: inline-block;
-    padding: 0 10px;
-    height: 40px;
-    line-height: 40px;
-    border-radius: 3px;
-    border: 2px solid var(--orange);
-}
-
-.signin-signup-btn a:hover{
-    opacity: 0.8;
-}
-
-.header .signin-btn{
-    background: rgba(255, 255, 255, 0.1);
-    color: var(--orange);
-}
-
-.header .signup-btn{
-    background: var(--orange);
-    color: #fff;
-} */
-
-.header {
     background-color: #222;
-    height: auto;
-    padding: 5px 0px;
 }
-.header .container {
+
+header .container {
     max-width: 1100px;
     margin: auto;
     height: 100%;
     vertical-align: middle;
 }
-.header .container table{
+
+.navbar-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-header .logo img{
+   height: 100%;
+}
+
+.navbar-header .search-box {
+    width: 450px;
+    height: 100%;
+    display: flex;
+    margin: 0 16px;
+    background: #fff
+}
+
+.search-box input {
+    flex: 1;
+    padding-left: 8px;
+    background: transparent;
+}
+
+.search-box button {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.search-box button {
+    background: transparent
+}
+
+.search-box button:hover {
+    background: rgba(0, 0, 0, 0.1)
+}
+
+.search-box button i {
+    color: #333
+}
+
+
+/* header .container table{
    padding:10px;
 }
-.header > .container input {
+header > .container input {
     width: 100%;
     height: 36px;
     padding: 0 10px;
@@ -126,22 +118,22 @@ body {
     border-radius: 3px;
 }
 
-.header td ul {
+header td ul {
     height: 100%;
     padding: auto;
 	padding-top:15px;
 }
-.header a {
+header a {
     color: var(--orange);
     font-size: 18px;
     margin-top: 10px;
 }
 
-.header ul li:first-child::after {
+header ul li:first-child::after {
     content: " / ";
     color: #fff;
 }
-.header a:hover {
+header a:hover {
     text-decoration: underline;
 }
 .sticky-top {
@@ -149,14 +141,14 @@ body {
     position: sticky;
     top: 0;
 }
-.header li {
+header li {
     display: inline;
 }
 
-.header img {
+header img {
     width: 100%;
     padding-right: 20px;
-}
+} */
 
 /* End Header */
 
@@ -452,29 +444,10 @@ a:hover {
         font-size: 15px;
     }
 
-    /* .header img {
-        max-width: 100px;
-    }
-
-    
-    .header .search-box{
-        height: 34px;
-    } 
-    .header .search-box i{
-        line-height: 34px;
-    }
-
-    .signin-signup-btn a{
-        height: 32px;
-        line-height: 32px;
-        padding:  0 5px;
-        font-size: 12px;
-    } */
-
     p{
         margin: 0;
     }
-    .header li {
+    header li {
         margin: 0px;
         padding: auto;
     }
@@ -482,7 +455,7 @@ a:hover {
     .submenu li {
         height: 25px;
     }
-	.header input {
+	header input {
 		font-size:smaller;
 		text-index: -5px;
 	}
@@ -498,7 +471,7 @@ a:hover {
     .footer .container > div:not(:last-child) {
         border-bottom: 1px solid lightgray;
     }
-    .header tr td:last-child{
+    header tr td:last-child{
         width: 35% !important;
     }
     
@@ -509,19 +482,19 @@ a:hover {
         font-size: 14px;
     } 
 
-    .header td:first-child{
+    header td:first-child{
         width:  20% !important;
     }
 
-    .header img{
+    header img{
         width:  100%;
     }
 
-    .header a{
+    header a{
         font-size: 14px;
     }
 
-    .header tr td:last-child{
+    header tr td:last-child{
         width: 30% !important;
     }
     

@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <script src="https://kit.fontawesome.com/98e857e600.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="container">
+                <div class="header__navbar">
+                    <a href="" class="header__logo">
+                        <img src="./imgs/logo01.png" alt="" class="header__logo-img">
+                    </a>
+                    <div class="header__search hide-on-tablet-mobile">
+                        <div class="header__search-wrap">
+                            <input type="text" class="header__search-input" placeholder="Tìm truyện">
+                            <button class="header__search-btn btn">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="header__notification">
+                        <i class="header__notification-icon fa-solid fa-comment"></i>
+                        <div class="header__notification-popup">
+                            <div class="header__notification-popup--no-user">
+                                <h3>Thông báo</h3>
+                                <p>Vui lòng <a href="./DangNhap.html">Đăng nhập</a> để sử dụng chức năng này</p>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="header__account hide-on-tablet-mobile">
+                        <li class="header__account-item">
+                            <a href="./DangNhap.html">Đăng nhập</a>
+                        </li>
+                        <li class="header__account-item">
+                            <a href="./DangKy.html">Đăng ký</a>
+                        </li>
+                    </ul>
+                    <button class="btn header-mobile__search-btn show-on-tablet-mobile">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <button class="btn header-mobile__navbar-toggle-btn show-on-tablet-mobile">
+                        <i class="fa-solid fa-bars"></i>
+                        <!-- <i class="fa-solid fa-xmark"></i> -->
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <nav class="nav hide-on-tablet-mobile">
+            <div class="container">
+                <ul class="nav__list">
+                    <li class="nav__item active">
+                        <a href="TrangChu.html" class="nav__link">
+                            <i class="nav__icon-home fa-solid fa-house"></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="Hot" class="nav__link">HOT</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="TheoDoi.html" class="nav__link">THEO DÕI</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="LichSu.html" class="nav__link">LỊCH SỬ</a>
+                    </li>
+                    <li class="nav__item nav__item-category">
+                        <a href="TheLoai.html" class="nav__link">
+                            THỂ LOẠI
+                            <i class="fa-solid fa-caret-down"></i>
+                        </a>
+                        <div class="category-popup">
+                            <div class="category">
+                                <div class="row">
+                                    <div class="col l-4">
+                                        <ul class="category-list">
+                                            <li class="category-item">
+                                                <a href="" class="category-link" data-title="Tất cả thể loại truyện tranh">
+                                                    <strong>Tất cả</strong>
+                                                </a>
+                                            </li>
+                                            <li class="category-item">
+                                                <a href="" class="category-link" data-title="Thể loại này thường có nội dung về đánh nhau, bạo lực, hỗn loạn, với diễn biến nhanh">Action</a>
+                                            </li>
+                                            <li class="category-item">
+                                                <a href="" class="category-link" data-title="Thể loại phiêu lưu, mạo hiểm, thường là hành trình của các nhân vật">Advanture</a>
+                                            </li>
+                                            <li class="category-item">
+                                                <a href="" class="category-link" data-title="Truyện đã được chuyển thể thành film Anime">Anime</a>
+                                            </li>
+                                            <li class="category-item">
+                                                <a href="" class="category-link" data-title="Thể loại này là những câu chuyện về người ở một thế giới này xuyên đến một thế giới khác, có thể là thế giới mang phong cách trung cổ với kiếm sĩ và ma thuật, hay thế giới trong game, hoặc có thể là bạn chết ở nơi này và được chuyển sinh đến nơi khác">Chuyển sinh</a>
+                                            </li>
+                                            <li class="category-item">
+                                                <a href="" class="category-link" data-title="Thể loại có nội dung trong sáng và cảm động, thường có các tình tiết gây cười, các xung đột nhẹ nhàng">Comedy</a>
+                                            </li>
+                                            <li class="category-item">
+                                                <a href="" class="category-link" data-title="Truyện tranh Châu Âu và Châu Mĩ">Comic</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col l-4">
+                                        <ul class="category-list">
+                                            <li class="category-item">
+                                                <a href="" class="category-link" data-title="Thể loại có nội dung về nấu ăn, ẩm thực">Cooking</a>
+                                            </li>
+                                            <li class="category-item">
+                                                <a href="" class="category-link" data-title="Truyện có nội dung xảy ra ở thời cổ đại phong kiến.">
+                                                    <strong>Cổ đại</strong>
+                                                </a>
+                                            </li>
+                                            <li class="category-item">
+                                                <a href="" class="category-link" data-title="Thể loại này thường có nội dung về đánh nhau, bạo lực, hỗn loạn, với diễn biến nhanh">Action</a>
+                                            </li>
+                                            <li class="category-item">
+                                                <a href="" class="category-link" data-title="Thể loại phiêu lưu, mạo hiểm, thường là hành trình của các nhân vật">Advanture</a>
+                                            </li>
+                                            <li class="category-item">
+                                                <a href="" class="category-link" data-title="Truyện đã được chuyển thể thành film Anime">Anime</a>
+                                            </li>
+                                            <li class="category-item">
+                                                <a href="" class="category-link" data-title="Thể loại này là những câu chuyện về người ở một thế giới này xuyên đến một thế giới khác, có thể là thế giới mang phong cách trung cổ với kiếm sĩ và ma thuật, hay thế giới trong game, hoặc có thể là bạn chết ở nơi này và được chuyển sinh đến nơi khác">Chuyển sinh</a>
+                                            </li>
+                                            <li class="category-item">
+                                                <a href="" class="category-link" data-title="Thể loại có nội dung trong sáng và cảm động, thường có các tình tiết gây cười, các xung đột nhẹ nhàng">Comedy</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col l-4">
+                                        <ul class="category-list">
+                                            <li class="category-item">
+                                                <a href="" class="category-link" data-title="Truyện tranh Châu Âu và Châu Mĩ">Comic</a>
+                                            </li>
+                                            <li class="category-item">
+                                                <a href="" class="category-link" data-title="Thể loại có nội dung về nấu ăn, ẩm thực">Cooking</a>
+                                            </li>
+                                            <li class="category-item">
+                                                <a href="" class="category-link" data-title="Truyện có nội dung xảy ra ở thời cổ đại phong kiến.">
+                                                    <strong>Cổ đại</strong>
+                                                </a>
+                                            </li>
+                                            <li class="category-item">
+                                                <a href="" class="category-link" data-title="Thể loại này thường có nội dung về đánh nhau, bạo lực, hỗn loạn, với diễn biến nhanh">Action</a>
+                                            </li>
+                                            <li class="category-item">
+                                                <a href="" class="category-link" data-title="Thể loại phiêu lưu, mạo hiểm, thường là hành trình của các nhân vật">Advanture</a>
+                                            </li>
+                                            <li class="category-item">
+                                                <a href="" class="category-link" data-title="Truyện đã được chuyển thể thành film Anime">Anime</a>
+                                            </li>
+                                            <li class="category-item">
+                                                <a href="" class="category-link" data-title="Thể loại này là những câu chuyện về người ở một thế giới này xuyên đến một thế giới khác, có thể là thế giới mang phong cách trung cổ với kiếm sĩ và ma thuật, hay thế giới trong game, hoặc có thể là bạn chết ở nơi này và được chuyển sinh đến nơi khác">Chuyển sinh</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="category-title">fv</p>
+                        </div>
+                    </li>
+                    <li class="nav__item nav__item-rating">
+                        <a href="" class="nav__link" disabled>
+                            XẾP HẠNG
+                            <i class="fa-solid fa-caret-down"></i>
+                        </a>
+                        <div class="rating-popup">
+                            <ul class="nav__rating-list">
+                                <li class="nav__rating-item">
+                                    <a href="" class="nav__rating-link">
+                                        <i class="fa-solid fa-eye"></i>
+                                        Top All
+                                    </a>
+                                </li>
+                                <li class="nav__rating-item">
+                                    <a href="" class="nav__rating-link">
+                                        <i class="fa-solid fa-eye"></i>
+                                        Top tháng
+                                    </a>
+                                </li>
+                                <li class="nav__rating-item">
+                                    <a href="" class="nav__rating-link">
+                                        <i class="fa-solid fa-eye"></i>
+                                        Top tuần
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav__item">
+                        <a href="TimTruyen.html" class="nav__link">TÌM TRUYỆN</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="main">
+            <div class="container">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="" class="breadcrumb-link">Trang chủ</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="" class="breadcrumb-link">Thể loại</a>
+                    </li>
+                </ul>
+
+                <section class="section carousel-section">
+                    <h2 class="section-title">
+                        Truyện đề cử
+                    </h2>
+                    <div class="slide-wrap">
+                        <div class="carousel">
+                            <div class="carousel_list">
+                                <div class="row">
+                                    <div class="col l-2-4">
+                                        <div class="carousel_item">
+                                            <a href="ChiTietTruyen.html">
+                                                <img class="carousel_item-img" src="./imgs/vo-luyen-dinh-phong.jpg" alt="">
+                                            </a>
+                                            <div class="carousel_item-caption">
+                                                <h3>
+                                                    <a href="ChiTietTruyen.html">Võ luyện đỉnh phong</a>
+                                                </h3>
+                                                <div class="carousel_item-info">
+                                                    <a href="">Chap 1397</a>
+                                                    <span>
+                                                        <i class="fa-regular fa-clock"></i>
+                                                        1 giờ trước
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <a href="" class="prev"><i class="fa-solid fa-chevron-left"></i></a> -->
+                        <!-- <a href="" class="next"><i class="fa-solid fa-chevron-right"></i></a> -->
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2 class="section-title">
+                        Truyện mới cập nhật
+                    </h2>
+                    <div class="row">
+                        <div class="col l-8 m-12 c-12">
+                            <div class="comics">
+                                <div class="row">
+                                    <div class="col l-3 m-4 c-6">
+                                        <div class="comic-item">
+                                            <a href="chitiettruyen.html" class="comic-item__img-wrap">
+                                                <img class="comic-item__img" src="imgs/cuon-so-thien-menh.jpg" alt="">
+                                                <div class="details">
+                                                    <div class="views">
+                                                        <i class="far fa-eye"></i>
+                                                        265.905
+                                                    </div>
+                    
+                                                    <div class="heart">
+                                                        <i class="fas fa-heart"></i>
+                                                        6.520
+                                                    </div>
+                                                </div>
+                                            </a>
+                    
+                                            <div class="comic-item__info">
+                                                <a href="chitiettruyen.html" class="title">Cuốn sổ thiên mệnh</a>
+                                                <div class="chapter-item">
+                                                    <a href="" class="chapter">Chapter 114</a>
+                                                    <span class="time">2 giờ trước</span>
+                                                </div>
+                                                <div class="chapter-item">
+                                                    <a href="" class="chapter">Chapter 113</a>
+                                                    <span class="time">7 ngày trước</span>
+                                                </div>
+                                                <div class="chapter-item">
+                                                    <a href="" class="chapter">Chapter 112</a>
+                                                    <span class="time">14 ngày trước</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-3 m-4 c-6">
+                                        <div class="comic-item">
+                                            <a href="chitiettruyen.html" class="comic-item__img-wrap">
+                                                <img class="comic-item__img" src="imgs/cuon-so-thien-menh.jpg" alt="">
+                                                <div class="details">
+                                                    <div class="views">
+                                                        <i class="far fa-eye"></i>
+                                                        265.905
+                                                    </div>
+                    
+                                                    <div class="heart">
+                                                        <i class="fas fa-heart"></i>
+                                                        6.520
+                                                    </div>
+                                                </div>
+                                            </a>
+                    
+                                            <div class="comic-item__info">
+                                                <a href="chitiettruyen.html" class="title">Cuốn sổ thiên mệnh</a>
+                                                <div class="chapter-item">
+                                                    <a href="" class="chapter">Chapter 114</a>
+                                                    <span class="time">2 giờ trước</span>
+                                                </div>
+                                                <div class="chapter-item">
+                                                    <a href="" class="chapter">Chapter 113</a>
+                                                    <span class="time">7 ngày trước</span>
+                                                </div>
+                                                <div class="chapter-item">
+                                                    <a href="" class="chapter">Chapter 112</a>
+                                                    <span class="time">14 ngày trước</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-3 m-4 c-6">
+                                        <div class="comic-item">
+                                            <a href="chitiettruyen.html" class="comic-item__img-wrap">
+                                                <img class="comic-item__img" src="imgs/cuon-so-thien-menh.jpg" alt="">
+                                                <div class="details">
+                                                    <div class="views">
+                                                        <i class="far fa-eye"></i>
+                                                        265.905
+                                                    </div>
+                    
+                                                    <div class="heart">
+                                                        <i class="fas fa-heart"></i>
+                                                        6.520
+                                                    </div>
+                                                </div>
+                                            </a>
+                    
+                                            <div class="comic-item__info">
+                                                <a href="chitiettruyen.html" class="title">Cuốn sổ thiên mệnh</a>
+                                                <div class="chapter-item">
+                                                    <a href="" class="chapter">Chapter 114</a>
+                                                    <span class="time">2 giờ trước</span>
+                                                </div>
+                                                <div class="chapter-item">
+                                                    <a href="" class="chapter">Chapter 113</a>
+                                                    <span class="time">7 ngày trước</span>
+                                                </div>
+                                                <div class="chapter-item">
+                                                    <a href="" class="chapter">Chapter 112</a>
+                                                    <span class="time">14 ngày trước</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-3 m-4 c-6">
+                                        <div class="comic-item">
+                                            <a href="chitiettruyen.html" class="comic-item__img-wrap">
+                                                <img class="comic-item__img" src="imgs/cuon-so-thien-menh.jpg" alt="">
+                                                <div class="details">
+                                                    <div class="views">
+                                                        <i class="far fa-eye"></i>
+                                                        265.905
+                                                    </div>
+                    
+                                                    <div class="heart">
+                                                        <i class="fas fa-heart"></i>
+                                                        6.520
+                                                    </div>
+                                                </div>
+                                            </a>
+                    
+                                            <div class="comic-item__info">
+                                                <a href="chitiettruyen.html" class="title">Cuốn sổ thiên mệnh</a>
+                                                <div class="chapter-item">
+                                                    <a href="" class="chapter">Chapter 114</a>
+                                                    <span class="time">2 giờ trước</span>
+                                                </div>
+                                                <div class="chapter-item">
+                                                    <a href="" class="chapter">Chapter 113</a>
+                                                    <span class="time">7 ngày trước</span>
+                                                </div>
+                                                <div class="chapter-item">
+                                                    <a href="" class="chapter">Chapter 112</a>
+                                                    <span class="time">14 ngày trước</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-3 m-4 c-6">
+                                        <div class="comic-item">
+                                            <a href="chitiettruyen.html" class="comic-item__img-wrap">
+                                                <img class="comic-item__img" src="imgs/cuon-so-thien-menh.jpg" alt="">
+                                                <div class="details">
+                                                    <div class="views">
+                                                        <i class="far fa-eye"></i>
+                                                        265.905
+                                                    </div>
+                    
+                                                    <div class="heart">
+                                                        <i class="fas fa-heart"></i>
+                                                        6.520
+                                                    </div>
+                                                </div>
+                                            </a>
+                    
+                                            <div class="comic-item__info">
+                                                <a href="chitiettruyen.html" class="title">Cuốn sổ thiên mệnh</a>
+                                                <div class="chapter-item">
+                                                    <a href="" class="chapter">Chapter 114</a>
+                                                    <span class="time">2 giờ trước</span>
+                                                </div>
+                                                <div class="chapter-item">
+                                                    <a href="" class="chapter">Chapter 113</a>
+                                                    <span class="time">7 ngày trước</span>
+                                                </div>
+                                                <div class="chapter-item">
+                                                    <a href="" class="chapter">Chapter 112</a>
+                                                    <span class="time">14 ngày trước</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-3 m-4 c-6">
+                                        <div class="comic-item">
+                                            <a href="chitiettruyen.html" class="comic-item__img-wrap">
+                                                <img class="comic-item__img" src="imgs/cuon-so-thien-menh.jpg" alt="">
+                                                <div class="details">
+                                                    <div class="views">
+                                                        <i class="far fa-eye"></i>
+                                                        265.905
+                                                    </div>
+                    
+                                                    <div class="heart">
+                                                        <i class="fas fa-heart"></i>
+                                                        6.520
+                                                    </div>
+                                                </div>
+                                            </a>
+                    
+                                            <div class="comic-item__info">
+                                                <a href="chitiettruyen.html" class="title">Cuốn sổ thiên mệnh</a>
+                                                <div class="chapter-item">
+                                                    <a href="" class="chapter">Chapter 114</a>
+                                                    <span class="time">2 giờ trước</span>
+                                                </div>
+                                                <div class="chapter-item">
+                                                    <a href="" class="chapter">Chapter 113</a>
+                                                    <span class="time">7 ngày trước</span>
+                                                </div>
+                                                <div class="chapter-item">
+                                                    <a href="" class="chapter">Chapter 112</a>
+                                                    <span class="time">14 ngày trước</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-3 m-4 c-6">
+                                        <div class="comic-item">
+                                            <a href="chitiettruyen.html" class="comic-item__img-wrap">
+                                                <img class="comic-item__img" src="imgs/cuon-so-thien-menh.jpg" alt="">
+                                                <div class="details">
+                                                    <div class="views">
+                                                        <i class="far fa-eye"></i>
+                                                        265.905
+                                                    </div>
+                    
+                                                    <div class="heart">
+                                                        <i class="fas fa-heart"></i>
+                                                        6.520
+                                                    </div>
+                                                </div>
+                                            </a>
+                    
+                                            <div class="comic-item__info">
+                                                <a href="chitiettruyen.html" class="title">Cuốn sổ thiên mệnh</a>
+                                                <div class="chapter-item">
+                                                    <a href="" class="chapter">Chapter 114</a>
+                                                    <span class="time">2 giờ trước</span>
+                                                </div>
+                                                <div class="chapter-item">
+                                                    <a href="" class="chapter">Chapter 113</a>
+                                                    <span class="time">7 ngày trước</span>
+                                                </div>
+                                                <div class="chapter-item">
+                                                    <a href="" class="chapter">Chapter 112</a>
+                                                    <span class="time">14 ngày trước</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-3 m-4 c-6">
+                                        <div class="comic-item">
+                                            <a href="chitiettruyen.html" class="comic-item__img-wrap">
+                                                <img class="comic-item__img" src="imgs/cuon-so-thien-menh.jpg" alt="">
+                                                <div class="details">
+                                                    <div class="views">
+                                                        <i class="far fa-eye"></i>
+                                                        265.905
+                                                    </div>
+                    
+                                                    <div class="heart">
+                                                        <i class="fas fa-heart"></i>
+                                                        6.520
+                                                    </div>
+                                                </div>
+                                            </a>
+                    
+                                            <div class="comic-item__info">
+                                                <a href="chitiettruyen.html" class="title">Cuốn sổ thiên mệnh</a>
+                                                <div class="chapter-item">
+                                                    <a href="" class="chapter">Chapter 114</a>
+                                                    <span class="time">2 giờ trước</span>
+                                                </div>
+                                                <div class="chapter-item">
+                                                    <a href="" class="chapter">Chapter 113</a>
+                                                    <span class="time">7 ngày trước</span>
+                                                </div>
+                                                <div class="chapter-item">
+                                                    <a href="" class="chapter">Chapter 112</a>
+                                                    <span class="time">14 ngày trước</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-3 m-4 c-6">
+                                        <div class="comic-item">
+                                            <a href="chitiettruyen.html" class="comic-item__img-wrap">
+                                                <img class="comic-item__img" src="imgs/cuon-so-thien-menh.jpg" alt="">
+                                                <div class="details">
+                                                    <div class="views">
+                                                        <i class="far fa-eye"></i>
+                                                        265.905
+                                                    </div>
+                    
+                                                    <div class="heart">
+                                                        <i class="fas fa-heart"></i>
+                                                        6.520
+                                                    </div>
+                                                </div>
+                                            </a>
+                    
+                                            <div class="comic-item__info">
+                                                <a href="chitiettruyen.html" class="title">Cuốn sổ thiên mệnh</a>
+                                                <div class="chapter-item">
+                                                    <a href="" class="chapter">Chapter 114</a>
+                                                    <span class="time">2 giờ trước</span>
+                                                </div>
+                                                <div class="chapter-item">
+                                                    <a href="" class="chapter">Chapter 113</a>
+                                                    <span class="time">7 ngày trước</span>
+                                                </div>
+                                                <div class="chapter-item">
+                                                    <a href="" class="chapter">Chapter 112</a>
+                                                    <span class="time">14 ngày trước</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-3 m-4 c-6">
+                                        <div class="comic-item">
+                                            <a href="chitiettruyen.html" class="comic-item__img-wrap">
+                                                <img class="comic-item__img" src="imgs/cuon-so-thien-menh.jpg" alt="">
+                                                <div class="details">
+                                                    <div class="views">
+                                                        <i class="far fa-eye"></i>
+                                                        265.905
+                                                    </div>
+                    
+                                                    <div class="heart">
+                                                        <i class="fas fa-heart"></i>
+                                                        6.520
+                                                    </div>
+                                                </div>
+                                            </a>
+                    
+                                            <div class="comic-item__info">
+                                                <a href="chitiettruyen.html" class="title">Cuốn sổ thiên mệnh</a>
+                                                <div class="chapter-item">
+                                                    <a href="" class="chapter">Chapter 114</a>
+                                                    <span class="time">2 giờ trước</span>
+                                                </div>
+                                                <div class="chapter-item">
+                                                    <a href="" class="chapter">Chapter 113</a>
+                                                    <span class="time">7 ngày trước</span>
+                                                </div>
+                                                <div class="chapter-item">
+                                                    <a href="" class="chapter">Chapter 112</a>
+                                                    <span class="time">14 ngày trước</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-3 m-4 c-6">
+                                        <div class="comic-item">
+                                            <a href="chitiettruyen.html" class="comic-item__img-wrap">
+                                                <img class="comic-item__img" src="imgs/cuon-so-thien-menh.jpg" alt="">
+                                                <div class="details">
+                                                    <div class="views">
+                                                        <i class="far fa-eye"></i>
+                                                        265.905
+                                                    </div>
+                    
+                                                    <div class="heart">
+                                                        <i class="fas fa-heart"></i>
+                                                        6.520
+                                                    </div>
+                                                </div>
+                                            </a>
+                    
+                                            <div class="comic-item__info">
+                                                <a href="chitiettruyen.html" class="title">Cuốn sổ thiên mệnh</a>
+                                                <div class="chapter-item">
+                                                    <a href="" class="chapter">Chapter 114</a>
+                                                    <span class="time">2 giờ trước</span>
+                                                </div>
+                                                <div class="chapter-item">
+                                                    <a href="" class="chapter">Chapter 113</a>
+                                                    <span class="time">7 ngày trước</span>
+                                                </div>
+                                                <div class="chapter-item">
+                                                    <a href="" class="chapter">Chapter 112</a>
+                                                    <span class="time">14 ngày trước</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-3 m-4 c-6">
+                                        <div class="comic-item">
+                                            <a href="chitiettruyen.html" class="comic-item__img-wrap">
+                                                <img class="comic-item__img" src="imgs/cuon-so-thien-menh.jpg" alt="">
+                                                <div class="details">
+                                                    <div class="views">
+                                                        <i class="far fa-eye"></i>
+                                                        265.905
+                                                    </div>
+                    
+                                                    <div class="heart">
+                                                        <i class="fas fa-heart"></i>
+                                                        6.520
+                                                    </div>
+                                                </div>
+                                            </a>
+                    
+                                            <div class="comic-item__info">
+                                                <a href="chitiettruyen.html" class="title">Cuốn sổ thiên mệnh</a>
+                                                <div class="chapter-item">
+                                                    <a href="" class="chapter">Chapter 114</a>
+                                                    <span class="time">2 giờ trước</span>
+                                                </div>
+                                                <div class="chapter-item">
+                                                    <a href="" class="chapter">Chapter 113</a>
+                                                    <span class="time">7 ngày trước</span>
+                                                </div>
+                                                <div class="chapter-item">
+                                                    <a href="" class="chapter">Chapter 112</a>
+                                                    <span class="time">14 ngày trước</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CHART -->
+                        <div class="col l-4 m-12 c-12">
+                            <div class="chart">
+                                <div class="tabs">
+                                    <div class="tab-item active">TẤT CẢ</div>
+                                    <div class="tab-item">NGÀY</div>
+                                    <div class="tab-item">THÁNG</div>
+                                </div>
+                
+                                <div class="detail-ranks">
+                                    <div class="detail-rank" id="month">
+                                        <div class="rank-item">
+                                            <span class="number one">01</span>
+                                            <a href="#">
+                                                <img class="rank-item_img" src="imgs/thumb1.jpg" alt="">
+                                            </a>
+                                            <div class="rank-item__info">
+                                                <a class="rank-item__title" href="#">Võ luyện đỉnh phong</a>
+                                                <div class="rank-item__info-bottom">
+                                                    <a href="#" class="chapter">Chương 1765</a>
+                                                    <span class="view">
+                                                        <i class="fas fa-eye"></i>
+                                                        21.472.320
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rank-item">
+                                            <span class="number two">02</span>
+                                            <a href="#">
+                                                <img class="rank-item_img" src="imgs/dap-toai-tien-ha.jpg" alt="">
+                                            </a>
+                                            <div class="rank-item__info">
+                                                <a class="rank-item__title" href="#">Đạp toái thiên hà</a>
+                                                <div class="rank-item__info-bottom">
+                                                    <a href="#" class="chapter">Chương 206</a>
+                                                    <span class="view">
+                                                        <i class="fas fa-eye"></i>
+                                                        19.584.658
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rank-item">
+                                            <span class="number three">03</span>
+                                            <a href="#">
+                                                <img class="rank-item_img" src="imgs/dieu-thu-cuong-y.jpg" alt="">
+                                            </a>
+                                            <div class="rank-item__info">
+                                                <a class="rank-item__title" href="#">Diệu thủ cường y</a>
+                                                <div class="rank-item__info-bottom">
+                                                    <a href="#" class="chapter">Chương 895</a>
+                                                    <span class="view">
+                                                        <i class="fas fa-eye"></i>
+                                                        18.524.953
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rank-item">
+                                            <span class="number">04</span>
+                                            <a href="#">
+                                                <img class="rank-item_img" src="imgs/ma-hoang-su-de-qua-thuc-qua-chung-tinh.jpg" alt="">
+                                            </a>
+                                            <div class="rank-item__info">
+                                                <a class="rank-item__title" href="#">Ma hoàng chung tình</a>
+                                                <div class="rank-item__info-bottom">
+                                                    <a href="#" class="chapter">Chương 1250</a>
+                                                    <span class="view">
+                                                        <i class="fas fa-eye"></i>
+                                                        17.615.100
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rank-item">
+                                            <span class="number">05</span>
+                                            <a href="#">
+                                                <img class="rank-item_img" src="imgs/ma-vuong-that-nghiep.jpg" alt="">
+                                            </a>
+                                            <div class="rank-item__info">
+                                                <a class="rank-item__title" href="#">Ma vương thất nghiệp</a>
+                                                <div class="rank-item__info-bottom">
+                                                    <a href="#" class="chapter">Chương 1765</a>
+                                                    <span class="view">
+                                                        <i class="fas fa-eye"></i>
+                                                        18.472.450
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rank-item">
+                                            <span class="number">06</span>
+                                            <a href="#">
+                                                <img class="rank-item_img" src="imgs/ouji-to-hero-hoang-tu-va-nguoi-hung.jpg" alt="">
+                                            </a>
+                                            <div class="rank-item__info">
+                                                <a class="rank-item__title" href="#">Ouji to Hero</a>
+                                                <div class="rank-item__info-bottom">
+                                                    <a href="#" class="chapter">Chương 1765</a>
+                                                    <span class="view">
+                                                        <i class="fas fa-eye"></i>
+                                                        12.125.652
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rank-item">
+                                            <span class="number">07</span>
+                                            <a href="#">
+                                                <img class="rank-item_img" src="imgs/nhat-kiem-doc-ton.jpg" alt="">
+                                            </a>
+                                            <div class="rank-item__info">
+                                                <a class="rank-item__title" href="#">Nhất kiếm độc tôn</a>
+                                                <div class="rank-item__info-bottom">
+                                                    <a href="#" class="chapter">Chương 1765</a>
+                                                    <span class="view">
+                                                        <i class="fas fa-eye"></i>
+                                                        21.472.320
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="detail-rank" id="week">
+                                        <div class="rank-item">
+                                            <span class="number one">01</span>
+                                            <a href="#">
+                                                <img class="rank-item_img" src="imgs/thumb2.jpg" alt="">
+                                            </a>
+                                            <div class="rank-item__info">
+                                                <a class="rank-item__title" href="#">Chiến hồn tuyệt thế</a>
+                                                <div class="rank-item__info-bottom">
+                                                    <a href="#" class="chapter">Chương 341</a>
+                                                    <span class="view">
+                                                        <i class="fas fa-eye"></i>
+                                                        17.519.020
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rank-item">
+                                            <span class="number two">02</span>
+                                            <a href="#">
+                                                <img class="rank-item_img" src="imgs/nhat-kiem-doc-ton.jpg" alt="">
+                                            </a>
+                                            <div class="rank-item__info">
+                                                <a class="rank-item__title" href="#">Nhất kiếm độc tôn</a>
+                                                <div class="rank-item__info-bottom">
+                                                    <a href="#" class="chapter">Chương 1765</a>
+                                                    <span class="view">
+                                                        <i class="fas fa-eye"></i>
+                                                        21.472.320
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rank-item">
+                                            <span class="number three">03</span>
+                                            <a href="#">
+                                                <img class="rank-item_img" src="imgs/ma-hoang-su-de-qua-thuc-qua-chung-tinh.jpg" alt="">
+                                            </a>
+                                            <div class="rank-item__info">
+                                                <a class="rank-item__title" href="#">Ma hoàng chung tình</a>
+                                                <div class="rank-item__info-bottom">
+                                                    <a href="#" class="chapter">Chương 1250</a>
+                                                    <span class="view">
+                                                        <i class="fas fa-eye"></i>
+                                                        17.615.100
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rank-item">
+                                            <span class="number">04</span>
+                                            <a href="#">
+                                                <img class="rank-item_img" src="imgs/ma-vuong-that-nghiep.jpg" alt="">
+                                            </a>
+                                            <div class="rank-item__info">
+                                                <a class="rank-item__title" href="#">Ma vương thất nghiệp</a>
+                                                <div class="rank-item__info-bottom">
+                                                    <a href="#" class="chapter">Chương 1765</a>
+                                                    <span class="view">
+                                                        <i class="fas fa-eye"></i>
+                                                        18.472.450
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rank-item">
+                                            <span class="number">05</span>
+                                            <a href="#">
+                                                <img class="rank-item_img" src="imgs/dieu-thu-cuong-y.jpg" alt="">
+                                            </a>
+                                            <div class="rank-item__info">
+                                                <a class="rank-item__title" href="#">Diệu thủ cường y</a>
+                                                <div class="rank-item__info-bottom">
+                                                    <a href="#" class="chapter">Chương 895</a>
+                                                    <span class="view">
+                                                        <i class="fas fa-eye"></i>
+                                                        18.524.953
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rank-item">
+                                            <span class="number">06</span>
+                                            <a href="#">
+                                                <img class="rank-item_img" src="imgs/dap-toai-tien-ha.jpg" alt="">
+                                            </a>
+                                            <div class="rank-item__info">
+                                                <a class="rank-item__title" href="#">Đạp toái thiên hà</a>
+                                                <div class="rank-item__info-bottom">
+                                                    <a href="#" class="chapter">Chương 206</a>
+                                                    <span class="view">
+                                                        <i class="fas fa-eye"></i>
+                                                        19.584.658
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rank-item">
+                                            <span class="number">07</span>
+                                            <a href="#">
+                                                <img class="rank-item_img" src="imgs/ouji-to-hero-hoang-tu-va-nguoi-hung.jpg" alt="">
+                                            </a>
+                                            <div class="rank-item__info">
+                                                <a class="rank-item__title" href="#">Ouji to Hero</a>
+                                                <div class="rank-item__info-bottom">
+                                                    <a href="#" class="chapter">Chương 1765</a>
+                                                    <span class="view">
+                                                        <i class="fas fa-eye"></i>
+                                                        12.125.652
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="detail-rank" id="day">
+                                        <div class="rank-item">
+                                            <span class="number one">01</span>
+                                            <a href="#">
+                                                <img class="rank-item_img" src="imgs/thumb3.jpg" alt="">
+                                            </a>
+                                            <div class="rank-item__info">
+                                                <a class="rank-item__title" href="#">Võ luyện đỉnh phong</a>
+                                                <div class="rank-item__info-bottom">
+                                                    <a href="#" class="chapter">Chương 1765</a>
+                                                    <span class="view">
+                                                        <i class="fas fa-eye"></i>
+                                                        21.472.320
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rank-item">
+                                            <span class="number two">02</span>
+                                               <a href="#">
+                                                <img sr class="rank-item_img"c="imgs/ouji-to-hero-hoang-tu-va-nguoi-hung.jpg" alt="">
+                                            </a>
+                                            <div class="rank-item__info">
+                                                <a class="rank-item__title" href="#">Ouji to Hero</a>
+                                                <div class="rank-item__info-bottom">
+                                                    <a href="#" class="chapter">Chương 1765</a>
+                                                    <span class="view">
+                                                        <i class="fas fa-eye"></i>
+                                                        12.125.652
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rank-item">
+                                            <span class="number three">03</span>
+                                            <a href="#">
+                                                <img class="rank-item_img" src="imgs/dap-toai-tien-ha.jpg" alt="">
+                                            </a>
+                                            <div class="rank-item__info">
+                                                <a class="rank-item__title" href="#">Đạp toái thiên hà</a>
+                                                <div class="rank-item__info-bottom">
+                                                    <a href="#" class="chapter">Chương 206</a>
+                                                    <span class="view">
+                                                        <i class="fas fa-eye"></i>
+                                                        19.584.658
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rank-item">
+                                            <span class="number">04</span>
+                                            <a href="#">
+                                                <img class="rank-item_img" src="imgs/dieu-thu-cuong-y.jpg" alt="">
+                                            </a>
+                                            <div class="rank-item__info">
+                                                <a class="rank-item__title" href="#">Diệu thủ cường y</a>
+                                                <div class="rank-item__info-bottom">
+                                                    <a href="#" class="chapter">Chương 895</a>
+                                                    <span class="view">
+                                                        <i class="fas fa-eye"></i>
+                                                        18.524.953
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rank-item">
+                                            <span class="number">05</span>
+                                            <a href="#">
+                                                <img class="rank-item_img" src="imgs/toi-la-linh-moi.jpg" alt="">
+                                            </a>
+                                            <div class="rank-item__info">
+                                                <a class="rank-item__title" href="#">Tôi là lính mới</a>
+                                                <div class="rank-item__info-bottom">
+                                                    <a href="#" class="chapter">Chương 1765</a>
+                                                    <span class="view">
+                                                        <i class="fas fa-eye"></i>
+                                                        21.472.320
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rank-item">
+                                            <span class="number">06</span>
+                                            <a href="#">
+                                                <img class="rank-item_img" src="imgs/thien-ma-phi-thang-truyen.jpg" alt="">
+                                            </a>
+                                            <div class="rank-item__info">
+                                                <a class="rank-item__title" href="#">Thiên ma truyện</a>
+                                                <div class="rank-item__info-bottom">
+                                                    <a href="#" class="chapter">Chương 1765</a>
+                                                    <span class="view">
+                                                        <i class="fas fa-eye"></i>
+                                                        21.472.320
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rank-item">
+                                            <span class="number">07</span>
+                                            <a href="#">
+                                                <img class="rank-item_img" src="imgs/nhat-kiem-doc-ton.jpg" alt="">
+                                            </a>
+                                            <div class="rank-item__info">
+                                                <a class="rank-item__title" href="#">Nhất kiếm độc tôn</a>
+                                                <div class="rank-item__info-bottom">
+                                                    <a href="#" class="chapter">Chương 1765</a>
+                                                    <span class="view">
+                                                        <i class="fas fa-eye"></i>
+                                                        21.472.320
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="info-box" >
+                    <img src="imgs/logo01.png" alt="" class="logo">
+                    <p class="copyright">Copyright © 2021 Vcomic</p>
+                    <p>Website đọc truyện miễn phí hay nhất.</p>
+                </div>
+    
+                <div class="contact-box">
+                    <p class="title">Liên hệ</p>
+                    <div class="contact">
+                        <div class="contact-item">
+                            <a href="tel: +989768545"><i class="fas fa-phone"></i>
+                            0989768545</a>
+                        </div>
+                        <div class="contact-item">
+                            <a href="mailto: vcomic@gmail.com"><i class="fas fa-envelope"></i>
+                            vcomic@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="follow-box">
+                    <p class="title">Theo dõi chúng tôi</p>
+                    <div class="social">
+                        <a href="#" title="twitter"><i  class="fab fa-twitter"></i> Twitter</a>
+                        <a href="#" title="instagram"><i class="fab fa-instagram"></i> Instagram</a>
+                        <a href="#" title="facebook"><i class="fab fa-facebook"></i> Facebook</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <span id="back-to-top">
+            <i class="fa-solid fa-chevron-up"></i>
+        </span>
+
+        <div class="navbar-collapse">
+            <div class="header__search-wrap">
+                <input type="search" class="header__search-input mobile" placeholder="Tìm truyện">
+                <button class="header__search-btn btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <ul class="nav__list">
+                <li class="nav__item active">
+                    <a href="TrangChu.html" class="nav__link">
+                        TRANG CHỦ
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="Hot" class="nav__link">HOT</a>
+                </li>
+                <li class="nav__item">
+                    <a href="TheoDoi.html" class="nav__link">THEO DÕI</a>
+                </li>
+                <li class="nav__item">
+                    <a href="LichSu.html" class="nav__link">LỊCH SỬ</a>
+                </li>
+                <li class="nav__item nav__item-category">
+                    <a href="TheLoai.html" role="button" class="nav__link dropdown-toggle">
+                        THỂ LOẠI
+                        <i class="fa-solid fa-caret-down"></i>
+                    </a>
+                    <div class="category-popup downdown-menu">
+                        <div class="category">
+                            <div class="row">
+                                <div class="col m-12">
+                                    <ul class="category-list">
+                                        <li class="category-item">
+                                            <a href="" class="category-link" data-title="Tất cả thể loại truyện tranh">
+                                                <strong>Tất cả</strong>
+                                            </a>
+                                        </li>
+                                        <li class="category-item">
+                                            <a href="" class="category-link" data-title="Thể loại này thường có nội dung về đánh nhau, bạo lực, hỗn loạn, với diễn biến nhanh">Action</a>
+                                        </li>
+                                        <li class="category-item">
+                                            <a href="" class="category-link" data-title="Thể loại phiêu lưu, mạo hiểm, thường là hành trình của các nhân vật">Advanture</a>
+                                        </li>
+                                        <li class="category-item">
+                                            <a href="" class="category-link" data-title="Truyện đã được chuyển thể thành film Anime">Anime</a>
+                                        </li>
+                                        <li class="category-item">
+                                            <a href="" class="category-link" data-title="Thể loại này là những câu chuyện về người ở một thế giới này xuyên đến một thế giới khác, có thể là thế giới mang phong cách trung cổ với kiếm sĩ và ma thuật, hay thế giới trong game, hoặc có thể là bạn chết ở nơi này và được chuyển sinh đến nơi khác">Chuyển sinh</a>
+                                        </li>
+                                        <li class="category-item">
+                                            <a href="" class="category-link" data-title="Thể loại có nội dung trong sáng và cảm động, thường có các tình tiết gây cười, các xung đột nhẹ nhàng">Comedy</a>
+                                        </li>
+                                        <li class="category-item">
+                                            <a href="" class="category-link" data-title="Truyện tranh Châu Âu và Châu Mĩ">Comic</a>
+                                        </li>
+                                        <li class="category-item">
+                                            <a href="" class="category-link" data-title="Thể loại có nội dung về nấu ăn, ẩm thực">Cooking</a>
+                                        </li>
+                                        <li class="category-item">
+                                            <a href="" class="category-link" data-title="Truyện có nội dung xảy ra ở thời cổ đại phong kiến.">
+                                                <strong>Cổ đại</strong>
+                                            </a>
+                                        </li>
+                                        <li class="category-item">
+                                            <a href="" class="category-link" data-title="Thể loại này thường có nội dung về đánh nhau, bạo lực, hỗn loạn, với diễn biến nhanh">Action</a>
+                                        </li>
+                                        <li class="category-item">
+                                            <a href="" class="category-link" data-title="Thể loại phiêu lưu, mạo hiểm, thường là hành trình của các nhân vật">Advanture</a>
+                                        </li>
+                                        <li class="category-item">
+                                            <a href="" class="category-link" data-title="Truyện đã được chuyển thể thành film Anime">Anime</a>
+                                        </li>
+                                        <li class="category-item">
+                                            <a href="" class="category-link" data-title="Thể loại này là những câu chuyện về người ở một thế giới này xuyên đến một thế giới khác, có thể là thế giới mang phong cách trung cổ với kiếm sĩ và ma thuật, hay thế giới trong game, hoặc có thể là bạn chết ở nơi này và được chuyển sinh đến nơi khác">Chuyển sinh</a>
+                                        </li>
+                                        <li class="category-item">
+                                            <a href="" class="category-link" data-title="Thể loại có nội dung trong sáng và cảm động, thường có các tình tiết gây cười, các xung đột nhẹ nhàng">Comedy</a>
+                                        </li>
+                                        <li class="category-item">
+                                            <a href="" class="category-link" data-title="Truyện tranh Châu Âu và Châu Mĩ">Comic</a>
+                                        </li>
+                                        <li class="category-item">
+                                            <a href="" class="category-link" data-title="Thể loại có nội dung về nấu ăn, ẩm thực">Cooking</a>
+                                        </li>
+                                        <li class="category-item">
+                                            <a href="" class="category-link" data-title="Truyện có nội dung xảy ra ở thời cổ đại phong kiến.">
+                                                <strong>Cổ đại</strong>
+                                            </a>
+                                        </li>
+                                        <li class="category-item">
+                                            <a href="" class="category-link" data-title="Thể loại này thường có nội dung về đánh nhau, bạo lực, hỗn loạn, với diễn biến nhanh">Action</a>
+                                        </li>
+                                        <li class="category-item">
+                                            <a href="" class="category-link" data-title="Thể loại phiêu lưu, mạo hiểm, thường là hành trình của các nhân vật">Advanture</a>
+                                        </li>
+                                        <li class="category-item">
+                                            <a href="" class="category-link" data-title="Truyện đã được chuyển thể thành film Anime">Anime</a>
+                                        </li>
+                                        <li class="category-item">
+                                            <a href="" class="category-link" data-title="Thể loại này là những câu chuyện về người ở một thế giới này xuyên đến một thế giới khác, có thể là thế giới mang phong cách trung cổ với kiếm sĩ và ma thuật, hay thế giới trong game, hoặc có thể là bạn chết ở nơi này và được chuyển sinh đến nơi khác">Chuyển sinh</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="category-title">fv</p>
+                    </div>
+                </li>
+                <li class="nav__item nav__item-rating">
+                    <a href="" class="nav__link dropdown-toggle">
+                        XẾP HẠNG
+                        <i class="fa-solid fa-caret-down"></i>
+                    </a>
+                    <div class="rating-popup">
+                        <ul class="nav__rating-list">
+                            <li class="nav__rating-item">
+                                <a href="" class="nav__rating-link">
+                                    <i class="fa-solid fa-eye"></i>
+                                    Top All
+                                </a>
+                            </li>
+                            <li class="nav__rating-item">
+                                <a href="" class="nav__rating-link">
+                                    <i class="fa-solid fa-eye"></i>
+                                    Top tháng
+                                </a>
+                            </li>
+                            <li class="nav__rating-item">
+                                <a href="" class="nav__rating-link">
+                                    <i class="fa-solid fa-eye"></i>
+                                    Top tuần
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav__item">
+                    <a href="TimTruyen.html" class="nav__link">TÌM TRUYỆN</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
